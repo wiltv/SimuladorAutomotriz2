@@ -47,7 +47,7 @@ public class simulador extends javax.swing.JFrame {
         ColaDiego3 = new javax.swing.JTextArea();
         jLabel13 = new javax.swing.JLabel();
         Ganador = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        Diminuir = new javax.swing.JButton();
         jScrollPane9 = new javax.swing.JScrollPane();
         ColaRefDiego = new javax.swing.JTextArea();
         jLabel16 = new javax.swing.JLabel();
@@ -67,7 +67,7 @@ public class simulador extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        Aumentar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -145,13 +145,13 @@ public class simulador extends javax.swing.JFrame {
         });
         jPanel2.add(Ganador, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 760, 210, -1));
 
-        jButton1.setText("DISMINUIR");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Diminuir.setText("DISMINUIR");
+        Diminuir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                DiminuirActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 620, -1, -1));
+        jPanel2.add(Diminuir, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 620, -1, -1));
 
         ColaRefDiego.setEditable(false);
         ColaRefDiego.setColumns(20);
@@ -232,26 +232,20 @@ public class simulador extends javax.swing.JFrame {
         jLabel14.setText("COLA DE REFUERZO");
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, -1, -1));
 
-        jButton2.setText("AUMENTAR");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Aumentar.setText("AUMENTAR");
+        Aumentar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                AumentarActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, -1, -1));
+        jPanel2.add(Aumentar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 620, -1, -1));
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 60, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\logo copa piston.png")); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 290, 270));
 
         jLabel9.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
         jLabel9.setText("COLA PRIORIDAD 1 ");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 200, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\Lambo logo.png")); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 50, 130, 150));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\NicePng_bugatti-logo-png_620314.png")); // NOI18N
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, -1, -1));
 
         jLabel1.setBackground(new java.awt.Color(204, 0, 0));
@@ -281,10 +275,14 @@ public class simulador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_GanadorActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    private void DiminuirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DiminuirActionPerformed
+         if (SimuladorAutomotriz.victorias<8000){
+            SimuladorAutomotriz.victorias = SimuladorAutomotriz.victorias + 1000;
+        }else{
+            
+        }
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_DiminuirActionPerformed
 
     private void textoAIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textoAIActionPerformed
         // TODO add your handling code here:
@@ -294,9 +292,13 @@ public class simulador extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textoAI2ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void AumentarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AumentarActionPerformed
+        if (SimuladorAutomotriz.victorias>3000){
+            SimuladorAutomotriz.victorias = SimuladorAutomotriz.victorias - 1000;
+        }else{
+            
+        }
+    }//GEN-LAST:event_AumentarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -334,6 +336,7 @@ public class simulador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Aumentar;
     private javax.swing.JTextArea ColaDiego1;
     private javax.swing.JTextArea ColaDiego2;
     private javax.swing.JTextArea ColaDiego3;
@@ -342,11 +345,10 @@ public class simulador extends javax.swing.JFrame {
     private javax.swing.JTextArea ColaKevin3;
     private javax.swing.JTextArea ColaRefDiego;
     private javax.swing.JTextArea ColaRefuerzo;
+    private javax.swing.JButton Diminuir;
     private javax.swing.JTextArea Estudio1Pelea;
     private javax.swing.JTextArea Estudio2Pelea;
     private javax.swing.JTextField Ganador;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

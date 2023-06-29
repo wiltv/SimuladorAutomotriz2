@@ -13,6 +13,7 @@ import java.util.Random;
 public class SimuladorAutomotriz {
     
     public static volatile Integer victorias = 0;
+    public static volatile Integer velocidad = 5000;
     /**
      * @param args the command line arguments
      */
