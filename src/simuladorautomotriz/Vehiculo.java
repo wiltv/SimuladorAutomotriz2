@@ -6,7 +6,7 @@ package simuladorautomotriz;
 import java.util.Random;
 /**
  *
- * @author wiltsson
+ * @author wiltsson, Valeria
  */
 public class Vehiculo {
     private Vehiculo next;

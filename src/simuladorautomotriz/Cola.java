@@ -6,7 +6,7 @@ package simuladorautomotriz;
 
 /**
  *
- * @author wiltsson
+ * @author Valeria, wiltsson
  */
 public class Cola {
     private Vehiculo head;

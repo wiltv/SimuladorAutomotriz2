@@ -33,7 +33,7 @@ public class simulador extends javax.swing.JFrame {
         colaBugatti3 = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        colaBugatti1 = new javax.swing.JTextArea();
+        listaGanadores = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
         colaBugatti2 = new javax.swing.JTextArea();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -70,7 +70,7 @@ public class simulador extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        ai3 = new javax.swing.JTextField();
+        ai1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         accion = new javax.swing.JTextField();
@@ -78,7 +78,7 @@ public class simulador extends javax.swing.JFrame {
         ganadasLambo1 = new javax.swing.JTextField();
         velocidad2 = new javax.swing.JTextField();
         jScrollPane10 = new javax.swing.JScrollPane();
-        colaBugatti4 = new javax.swing.JTextArea();
+        colaBugatti1 = new javax.swing.JTextArea();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -103,12 +103,12 @@ public class simulador extends javax.swing.JFrame {
         jLabel3.setText("COLA 2 ");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 290, -1, -1));
 
-        colaBugatti1.setEditable(false);
-        colaBugatti1.setColumns(20);
-        colaBugatti1.setRows(5);
-        jScrollPane3.setViewportView(colaBugatti1);
+        listaGanadores.setEditable(false);
+        listaGanadores.setColumns(20);
+        listaGanadores.setRows(5);
+        jScrollPane3.setViewportView(listaGanadores);
 
-        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 490, 270, 50));
+        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 490, 270, 50));
 
         colaBugatti2.setEditable(false);
         colaBugatti2.setColumns(20);
@@ -129,24 +129,24 @@ public class simulador extends javax.swing.JFrame {
         colaLambo1.setRows(5);
         jScrollPane6.setViewportView(colaLambo1);
 
-        jPanel2.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 230, 250, 40));
+        jPanel2.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 230, 250, 40));
 
         colaLambo2.setEditable(false);
         colaLambo2.setColumns(20);
         colaLambo2.setRows(5);
         jScrollPane7.setViewportView(colaLambo2);
 
-        jPanel2.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 280, 250, 40));
+        jPanel2.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 280, 250, 40));
 
         colaLambo3.setEditable(false);
         colaLambo3.setColumns(20);
         colaLambo3.setRows(5);
         jScrollPane8.setViewportView(colaLambo3);
 
-        jPanel2.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 330, 250, 40));
+        jPanel2.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 330, 250, 40));
 
         jLabel13.setText("segundos");
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, -1, -1));
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 340, -1, -1));
 
         disminuir.setText("DISMINUIR");
         disminuir.addActionListener(new java.awt.event.ActionListener() {
@@ -154,18 +154,18 @@ public class simulador extends javax.swing.JFrame {
                 disminuirActionPerformed(evt);
             }
         });
-        jPanel2.add(disminuir, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 380, -1, -1));
+        jPanel2.add(disminuir, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, -1, -1));
 
         colaLamboRef.setEditable(false);
         colaLamboRef.setColumns(20);
         colaLamboRef.setRows(5);
         jScrollPane9.setViewportView(colaLamboRef);
 
-        jPanel2.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 400, 250, 40));
+        jPanel2.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 400, 250, 40));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel16.setText("Lista de Ganadores");
-        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 450, -1, -1));
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, -1, -1));
 
         ganador.setEditable(false);
         ganador.addActionListener(new java.awt.event.ActionListener() {
@@ -185,19 +185,19 @@ public class simulador extends javax.swing.JFrame {
                 ai2ActionPerformed(evt);
             }
         });
-        jPanel2.add(ai2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 470, 60, 40));
+        jPanel2.add(ai2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 480, 60, 40));
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel19.setText("Resultado:");
         jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 640, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel20.setText("AI revisando ID: ");
-        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 470, -1, -1));
+        jLabel20.setText("AI revisando ID");
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 480, -1, 30));
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel21.setText("Lamborghini");
-        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 580, -1, -1));
+        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 580, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
         jLabel7.setText("REFUERZO");
@@ -229,7 +229,7 @@ public class simulador extends javax.swing.JFrame {
                 aumentarActionPerformed(evt);
             }
         });
-        jPanel2.add(aumentar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
+        jPanel2.add(aumentar, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, -1, -1));
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 60, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
@@ -241,18 +241,18 @@ public class simulador extends javax.swing.JFrame {
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 240, -1, -1));
 
         jLabel12.setText(" Carreras Ganadas");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 630, -1, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 630, -1, -1));
 
         jLabel15.setText(" Carreras Ganadas");
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, -1, -1));
 
-        ai3.setEditable(false);
-        ai3.addActionListener(new java.awt.event.ActionListener() {
+        ai1.setEditable(false);
+        ai1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ai3ActionPerformed(evt);
+                ai1ActionPerformed(evt);
             }
         });
-        jPanel2.add(ai3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, 60, 40));
+        jPanel2.add(ai1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, 60, 40));
 
         jLabel1.setBackground(new java.awt.Color(204, 0, 0));
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -286,7 +286,7 @@ public class simulador extends javax.swing.JFrame {
                 ganadasLambo1ActionPerformed(evt);
             }
         });
-        jPanel2.add(ganadasLambo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 650, 90, 30));
+        jPanel2.add(ganadasLambo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 650, 90, 30));
 
         velocidad2.setEditable(false);
         velocidad2.setText("0");
@@ -295,34 +295,34 @@ public class simulador extends javax.swing.JFrame {
                 velocidad2ActionPerformed(evt);
             }
         });
-        jPanel2.add(velocidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 330, 70, 30));
+        jPanel2.add(velocidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 330, 70, 30));
 
-        colaBugatti4.setEditable(false);
-        colaBugatti4.setColumns(20);
-        colaBugatti4.setRows(5);
-        jScrollPane10.setViewportView(colaBugatti4);
+        colaBugatti1.setEditable(false);
+        colaBugatti1.setColumns(20);
+        colaBugatti1.setRows(5);
+        jScrollPane10.setViewportView(colaBugatti1);
 
         jPanel2.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 250, 40));
 
         jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\Lambo logo.png")); // NOI18N
-        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 80, -1, -1));
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 80, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel27.setText("AI revisando ID: ");
+        jLabel27.setText("AI revisando ID");
         jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
 
         jLabel28.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\logo copa piston.png")); // NOI18N
-        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 80, -1, -1));
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel24.setText("Cambiar Velocidad");
-        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 290, -1, -1));
+        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 290, -1, -1));
 
         jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\fancesco cars.png")); // NOI18N
         jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 590, -1, -1));
 
         jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\rayo cars.png")); // NOI18N
-        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 600, -1, -1));
+        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 600, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1310, 720));
 
@@ -375,9 +375,9 @@ public class simulador extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_aumentarActionPerformed
 
-    private void ai3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ai3ActionPerformed
+    private void ai1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ai1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ai3ActionPerformed
+    }//GEN-LAST:event_ai1ActionPerformed
 
     private void accionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accionActionPerformed
         // TODO add your handling code here:
@@ -432,13 +432,12 @@ public class simulador extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static volatile javax.swing.JTextField accion;
+    public static volatile javax.swing.JTextField ai1;
     public static volatile javax.swing.JTextField ai2;
-    public static volatile javax.swing.JTextField ai3;
     private javax.swing.JButton aumentar;
     public static volatile javax.swing.JTextArea colaBugatti1;
     public static volatile javax.swing.JTextArea colaBugatti2;
     public static volatile javax.swing.JTextArea colaBugatti3;
-    public static volatile javax.swing.JTextArea colaBugatti4;
     public static volatile javax.swing.JTextArea colaBugattiRef;
     public static volatile javax.swing.JTextArea colaLambo1;
     public static volatile javax.swing.JTextArea colaLambo2;
@@ -488,6 +487,7 @@ public class simulador extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
+    public static volatile javax.swing.JTextArea listaGanadores;
     public static volatile javax.swing.JTextField velocidad2;
     // End of variables declaration//GEN-END:variables
 }
