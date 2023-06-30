@@ -26,7 +26,6 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -35,7 +34,6 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -48,9 +46,14 @@
       </Layout>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="66" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="-10" y="-10" width="1310" height="720"/>
+              <AbsoluteConstraints x="-10" y="-10" width="1320" height="720"/>
             </Constraint>
           </Constraints>
 
@@ -581,7 +584,7 @@
             <Component class="javax.swing.JLabel" name="jLabel25">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\valer\Downloads\NicePng_bugatti-logo-png_620314.png"/>
+                  <Image iconType="3" name="/logo bugatti.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -682,7 +685,7 @@
             <Component class="javax.swing.JLabel" name="jLabel26">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\valer\Downloads\Lambo logo.png"/>
+                  <Image iconType="3" name="/Lambo logo.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -707,7 +710,7 @@
             <Component class="javax.swing.JLabel" name="jLabel28">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\valer\Downloads\logo copa piston.png"/>
+                  <Image iconType="3" name="/logo copa piston.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -732,7 +735,7 @@
             <Component class="javax.swing.JLabel" name="jLabel29">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\valer\Downloads\fancesco cars.png"/>
+                  <Image iconType="3" name="/fancesco cars.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -744,7 +747,7 @@
             <Component class="javax.swing.JLabel" name="jLabel23">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\valer\Downloads\rayo cars.png"/>
+                  <Image iconType="3" name="/rayo cars.png"/>
                 </Property>
               </Properties>
               <Constraints>

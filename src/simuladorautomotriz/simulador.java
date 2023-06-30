@@ -90,6 +90,7 @@ public class simulador extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setBackground(new java.awt.Color(255, 102, 0));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         colaBugatti3.setEditable(false);
@@ -261,7 +262,7 @@ public class simulador extends javax.swing.JFrame {
         jLabel1.setOpaque(true);
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 10, 1330, 60));
 
-        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\NicePng_bugatti-logo-png_620314.png")); // NOI18N
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo bugatti.png"))); // NOI18N
         jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 190, 100));
 
         accion.setEditable(false);
@@ -304,27 +305,27 @@ public class simulador extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 250, 40));
 
-        jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\Lambo logo.png")); // NOI18N
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lambo logo.png"))); // NOI18N
         jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 80, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel27.setText("AI revisando ID");
         jPanel2.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
 
-        jLabel28.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\logo copa piston.png")); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo copa piston.png"))); // NOI18N
         jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel24.setText("Cambiar Velocidad");
         jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 290, -1, -1));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\fancesco cars.png")); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fancesco cars.png"))); // NOI18N
         jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 590, -1, -1));
 
-        jLabel23.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\rayo cars.png")); // NOI18N
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rayo cars.png"))); // NOI18N
         jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 600, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1310, 720));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1320, 720));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -332,15 +333,13 @@ public class simulador extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
