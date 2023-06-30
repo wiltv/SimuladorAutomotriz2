@@ -55,6 +55,34 @@ public class IA {
                simulador.accion.setText(String.valueOf("Gano"));
                System.out.println(Arrays.toString(ganadores));
                
+               // Obtenemos el contenido actual del TextArea
+               String contenidoActual = simulador.listaGanadores.getText();
+
+               // Creamos una variable para concatenar los elementos
+               String elementos = "";
+               // Recorremos el arreglo con un ciclo for
+               for (int i = 0; i < ganadores.length; i++) {
+                   // Verificamos si el elemento es diferente de cero
+                   if (ganadores[i] != 0) {
+                       // Concatenamos el elemento a la cadena
+                       if (elementos.isEmpty()) {
+                           elementos += ganadores[i];
+                       } else {
+                           elementos += " --> " + ganadores[i];
+                       }
+                   }
+               }
+
+               // Verificamos si el TextArea está vacío
+               if (contenidoActual.isEmpty()) {
+                   // Si está vacío, establecemos el contenido con la cadena de elementos
+                   simulador.listaGanadores.setText(elementos);
+               } else {
+                   // Si no está vacío, concatenamos los nuevos elementos al contenido actual
+                   String nuevoContenido = contenidoActual + elementos;
+                   simulador.listaGanadores.setText(nuevoContenido);
+               }
+               
                ganador++;
                
            }else if(valor >=40 && valor<67){
