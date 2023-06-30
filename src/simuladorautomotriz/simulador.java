@@ -260,7 +260,7 @@ public class simulador extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 204, 51));
         jLabel1.setText("                                                    COPA PISTON ");
         jLabel1.setOpaque(true);
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 10, 1330, 60));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1330, 60));
 
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo bugatti.png"))); // NOI18N
         jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 190, 100));
